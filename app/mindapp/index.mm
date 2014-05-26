@@ -61,8 +61,8 @@
 <icon BUILTIN="attach"/>
 </node>
 </node>
-<node CREATED="1400345482239" ID="ID_1355208644" MODIFIED="1401076491776" TEXT="link: Link to All Articles:/articles/display_articles"/>
-<node CREATED="1400935105574" ID="ID_1134235500" MODIFIED="1401008434412" TEXT="show_comment: Show Comment">
+<node CREATED="1400345482239" ID="ID_1355208644" MODIFIED="1401080793933" TEXT="link: Problem1 Link :/articles/display_articles"/>
+<node CREATED="1400935105574" ID="ID_1134235500" MODIFIED="1401081344461" TEXT="show_comment: Problem 2 Show Comment">
 <node CREATED="1400427049635" ID="ID_772560979" MODIFIED="1400995718305" TEXT="display_articles">
 <icon BUILTIN="attach"/>
 </node>
@@ -85,7 +85,7 @@
 </node>
 <node CREATED="1400345482239" ID="ID_1279856699" MODIFIED="1400396823415" TEXT="link: &#xe1c;&#xe39;&#xe49;&#xe40;&#xe02;&#xe35;&#xe22;&#xe19;:/authors/display_authors"/>
 </node>
-<node CREATED="1400426908608" ID="ID_446485911" MODIFIED="1401011046864" TEXT="comments: Comment">
+<node CREATED="1400426908608" FOLDED="true" ID="ID_446485911" MODIFIED="1401080726520" TEXT="comments: Comment (Not Work Yet)">
 <node CREATED="1400426972901" FOLDED="true" ID="ID_1210180259" MODIFIED="1401008142632" TEXT="comment: Enter Comment">
 <node CREATED="1400427049635" ID="ID_899891949" MODIFIED="1400430853267" TEXT="new">
 <icon BUILTIN="attach"/>
