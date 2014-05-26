@@ -1,0 +1,8 @@
+%h3= @author.name
+- if @author.pic
+  - basename = File.basename(@author.pic)
+  = cl_image_tag basename, :width => 800, :height => 600, :crop => :fit, :style=>"margin-left:30px;"
+#detail= @author.detail
+- if @author.attach
+  = image_tag "page.png"
+  = link_to_blank "ดาวน์โหลดเอกสารประกอบ", @author.attach

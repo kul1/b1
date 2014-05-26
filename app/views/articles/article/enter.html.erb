@@ -1,0 +1,12 @@
+<%
+  doc = Article.new :issue_on=> Date.today, :process_at => Time.now
+%>
+<%= fields_for doc do |f| %>
+  <%= f.label :name, "Name" %>
+  <%= f.text_field :name %>
+  <%= f.label :published_on, "Published Date" %>
+  <%= f.date_field :published_on %>
+  <%= f.label :content, "Content" %>
+  <%= f.text_area :content, :cols=>50, :rows=>6 %>
+<% end %>
+

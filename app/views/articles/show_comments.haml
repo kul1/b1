@@ -1,0 +1,19 @@
+- @article = Article.find params[:id]
+- @comments = @article.comments	
+-#debugger
+%h3= @article.name
+- if @comments.size > 0
+	%P= "----Display comments in loop for item"
+	=for comment in @article.comments
+		=comment.name
+		=comment.content
+
+Enter New Comment
+= form_for [@article, Comment.new] do |f| 
+	= f.label :name 
+	= f.text_field :name 
+	= f.label :comment 
+	= f.text_field :content
+
+
+  

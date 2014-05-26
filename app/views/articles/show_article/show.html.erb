@@ -1,0 +1,18 @@
+ <% @articles = Article.last %>
+
+Record from @articles = Article.last =  <% @articles %>
+ <p></p>
+Title  @title = "หนังสือ" passed from articles_controllers.rb =   
+ <%= @title %>
+  <p></p>
+  <% @title = "หนังสือ" %>
+Title  @title = "หนังสือ" passed from show.html.erb =   
+ <%= @title %>
+  <p></p>
+
+article name from @article.name =
+  <%=@articles.name %>
+  <p></p>
+article content from @articles.content = 
+  <%=@articles.content %>
+  

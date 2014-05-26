@@ -1,0 +1,5 @@
+%P= form_for [@comment, Comments.new] do |f|
+		%P= f.label :name 
+		%P= f.text_field :name 
+		%P= f.text_area :content, :rows => 10 
+%P= f.submit
