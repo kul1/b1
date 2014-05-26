@@ -61,7 +61,7 @@
 <icon BUILTIN="attach"/>
 </node>
 </node>
-<node CREATED="1400345482239" ID="ID_1355208644" MODIFIED="1400396827244" TEXT="link: Show All Articles:/articles/display_articles"/>
+<node CREATED="1400345482239" ID="ID_1355208644" MODIFIED="1401076491776" TEXT="link: Link to All Articles:/articles/display_articles"/>
 <node CREATED="1400935105574" ID="ID_1134235500" MODIFIED="1401008434412" TEXT="show_comment: Show Comment">
 <node CREATED="1400427049635" ID="ID_772560979" MODIFIED="1400995718305" TEXT="display_articles">
 <icon BUILTIN="attach"/>
