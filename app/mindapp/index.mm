@@ -47,7 +47,7 @@
 <node CREATED="1275373154914" ID="ID_340725299" MODIFIED="1275373158632" TEXT="role:d"/>
 <node CREATED="1275788317299" ID="ID_716276608" MODIFIED="1359019912446" TEXT="link: error_logs: /mindapp/error_logs"/>
 </node>
-<node CREATED="1400218317346" ID="ID_1304666280" MODIFIED="1401008167361" TEXT="articles: Article">
+<node CREATED="1400218317346" ID="ID_1304666280" MODIFIED="1401177138997" TEXT="articles: Article (Problems)">
 <node CREATED="1400218341445" FOLDED="true" ID="ID_1268637649" MODIFIED="1401008142629" TEXT="article: Enter Article">
 <node CREATED="1400219404120" ID="ID_373403892" MODIFIED="1400226402538" TEXT="enter">
 <icon BUILTIN="attach"/>
@@ -61,8 +61,8 @@
 <icon BUILTIN="attach"/>
 </node>
 </node>
-<node CREATED="1400345482239" ID="ID_1355208644" MODIFIED="1401116167305" TEXT="link: Link all articles :/articles/display_articles"/>
-<node CREATED="1400935105574" ID="ID_1134235500" MODIFIED="1401081344461" TEXT="show_comment: Problem 2 Show Comment">
+<node CREATED="1400345482239" ID="ID_1355208644" MODIFIED="1401177055722" TEXT="link: Problem of Link (Submit)  :/articles/display_articles"/>
+<node CREATED="1400935105574" ID="ID_1134235500" MODIFIED="1401177033279" TEXT="show_comment: Problem of Action (No Submit)">
 <node CREATED="1400427049635" ID="ID_772560979" MODIFIED="1400995718305" TEXT="display_articles">
 <icon BUILTIN="attach"/>
 </node>
@@ -85,7 +85,7 @@
 </node>
 <node CREATED="1400345482239" ID="ID_1279856699" MODIFIED="1400396823415" TEXT="link: &#xe1c;&#xe39;&#xe49;&#xe40;&#xe02;&#xe35;&#xe22;&#xe19;:/authors/display_authors"/>
 </node>
-<node CREATED="1400426908608" FOLDED="true" ID="ID_446485911" MODIFIED="1401080726520" TEXT="comments: Comment (Not Work Yet)">
+<node CREATED="1400426908608" FOLDED="true" ID="ID_446485911" MODIFIED="1401177164397" TEXT="comments: Comment (Under Construction)">
 <node CREATED="1400426972901" FOLDED="true" ID="ID_1210180259" MODIFIED="1401008142632" TEXT="comment: Enter Comment">
 <node CREATED="1400427049635" ID="ID_899891949" MODIFIED="1400430853267" TEXT="new">
 <icon BUILTIN="attach"/>

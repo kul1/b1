@@ -1,8 +1,8 @@
 class CommentsController < ApplicationController
 	
-  def new
-    @article = Article.new
-  end
+  #def new
+   # @article = Article.new
+  #end
 
   def create
     debugger
