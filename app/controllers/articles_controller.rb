@@ -13,9 +13,9 @@ class ArticlesController < ApplicationController
   def show_article
     	@article = Article.find params[:id]
   end
-  def new
-    @article = Article.new
-  end
+  #def new
+  #  @article = Article.new
+  #end
     def show_comments
     @article = Article.find(params[:id])
     @comments = @article.comments 
@@ -24,7 +24,6 @@ class ArticlesController < ApplicationController
     @article = Article.find_by :id=> $xvars["display_articles"]["id"]
     @comment = @article.comments :cm_id => $xvars["display_articles"]["id"]
     
-    @comment = @article.comments.create!(params[:cm_id => $xvars["display_articles"]["id"])
   end
   def create_activity
     Act.create $xvars["enter"]["act"]

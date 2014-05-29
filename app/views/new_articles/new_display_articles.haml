@@ -8,7 +8,7 @@
     %th ลบ
   -@articles.each do |article|
     %tr
-      %td= link_to article.name, :controller=>"articles", :action=>"show_comments", :id=>article.id
-      %td= link_to article.content, :controller=>"articles", :action=>"show_comments", :id=>article.id
+      %td= link_to article.name, '/mindapp/init?s=new_articles:new_show_comment'
+      %td= link_to article.content, '/mindapp/init?s=articles:show_comment'
       %td= date_thai article.created_at
       %td(align='center')= link_to image_tag('delete.png', style:'border:none; float:none;'), "#", :onclick=>"if (confirm('กรุณายืนยัน')) {location.hash='/articles/rm/#{article.id}';}"
