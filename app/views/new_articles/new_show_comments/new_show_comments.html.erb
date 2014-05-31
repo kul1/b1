@@ -1,0 +1,38 @@
+
+<% @articles=Article.all %>
+<%# @article = Article.find(params[:id=$xvars["p"]["id"]]) %>   notwork 
+
+<p >
+  <b>            Problem 1 Can not pass id.                 </b>
+  <% @article = @articles.last %>  
+  Set to display only to show if article find good record
+  because   
+  @article = Article.find(params[:id=$xvars["p"]["id"]])  
+  not work
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @article.name %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @article.content %>
+</p>
+
+
+<% if @article.comments.size > 0 %>
+  <h2>Comments</h2>
+  <% for comment in @article.comments %>
+    <h3><%= comment.name %></h3>
+    <p><%= comment.content %></p>
+  <% end %>
+<% end %>
+
+<h2>New Comment</h2>
+<%= form_for [@article, Comment.new] do |f| %>
+  <p><%= f.label :name %> <%= f.text_field :name %></p>
+  <p><%= f.text_area :content, :rows => 10 %></p>
+  <p><%= f.submit %></p>
+<% end %>>
