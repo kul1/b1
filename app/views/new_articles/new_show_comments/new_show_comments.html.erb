@@ -1,0 +1,32 @@
+
+<%
+@articles=Article.all
+@article=@articles[Integer($xvars["p"]["id"])]
+#debugger
+%>
+<p>
+  <b>Name:</b>
+  <%= @article.name %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @article.content %>
+</p>
+
+
+<% if @article.comments.size > 0 %>
+  <h2>Comments</h2>
+  <% for comment in @article.comments %>
+    <h3><%= comment.name %></h3>
+    <p><%= comment.content %></p>
+  <% end %>
+<% end %>
+
+<h2>New Comment</h2>
+<%#= fields_for [@article, Comment.new] do |f| %>  <%# Need  [@article, Comment.new] %>
+<%= fields_for @article do |f| %> <%# Test by use only @article instead of [@article, Comment.new] %>
+
+  <p><%= f.label :name %> <%= f.text_field :name %></p>
+  <p><%= f.text_area :content, :rows => 10 %></p>
+<% end %>>

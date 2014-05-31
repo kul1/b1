@@ -7,6 +7,9 @@ B1::Application.routes.draw do
 
   match '/auth/:provider/callback' => 'sessions#create'
 
+  match ':new_display_articles' => 'new_articles#new_display_articles'
+
+
   resources :sessions
 
   resources :identities
@@ -16,9 +19,12 @@ B1::Application.routes.draw do
     resources :comments
   end
   resources :comments
+  resources :new_articles
 
   resources :articles do
     resources :comments
   end
+
+
 
 end
