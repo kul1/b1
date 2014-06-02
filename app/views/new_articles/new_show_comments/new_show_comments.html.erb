@@ -1,6 +1,12 @@
 
+<<<<<<< HEAD
 <%= debug $xvars['p'] %>
 <% @article = Article.find($xvars["p"]["id"]) %>  
+=======
+<% @articles=Article.all %>
+<% @article = Article.find($xvars["p"]["id"]) %> 
+
+>>>>>>> FETCH_HEAD
 
 
 
@@ -27,5 +33,4 @@
 <%= form_for [@article, Comment.new] do |f| %>
   <p><%= f.label :name %> <%= f.text_field :name %></p>
   <p><%= f.text_area :content, :rows => 10 %></p>
-  <p><%= f.submit %></p>
 <% end %>>
