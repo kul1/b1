@@ -9,6 +9,8 @@ B1::Application.routes.draw do
 
   match ':new_display_articles' => 'new_articles#new_display_articles'
 
+  match '/mindapp/init?s=new_articles:new_show_comments' => 'mindapp#init'
+
 
   resources :sessions
 

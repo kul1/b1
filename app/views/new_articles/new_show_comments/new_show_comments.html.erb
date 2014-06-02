@@ -1,15 +1,8 @@
 
 <%= debug $xvars['p'] %>
-<%# @article = Article.find(params[:id=$xvars["p"]["id"]]) %>   notwork
+<% @article = Article.find($xvars["p"]["id"]) %>  
 
-<p >
-  <b>            Problem 1 Can not pass id.                 </b>
-  <% @article = Article.last %>
-  Set to display only to show if article find good record
-  because
-  @article = Article.find(params[:id=$xvars["p"]["id"]])
-  not work
-</p>
+
 
 <p>
   <b>Name:</b>
