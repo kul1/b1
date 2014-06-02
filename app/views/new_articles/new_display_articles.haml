@@ -1,12 +1,15 @@
 - @title= "Articles"
+- @articles=Article.all 
 /= paginate @articles
 %table{:id=>"pending-table", :width=>"100%"}
   %tr{:style=>"color:white; background-color:#97BF60;"}
     %th เรื่อง
+    %th article.id
     %th เนื้อหา
     %th ลบ
   -@articles.each do |article|
     %tr
-      %td= link_to article.name, '/mindapp/init?s=new_articles:new_show_comments&id=#"{article.id}"&confirm=yes'
-      %td= link_to article.content,  '/mindapp/init?s=new_articles:new_show_comments&id=53804d4ba4e90e1d9d00000f&confirm=yes'
+      %td= link_to article.name, '/mindapp/init?s=new_articles:new_show_comments&(:id=#{article.id})&confirm=yes'
+      %td= link_to article.id, '/mindapp/init?s=new_articles:new_show_comments&a(:id=#{article.id})confirm=yes'
+      %td= link_to article.content, '/mindapp/init?s=new_articles:new_show_comments&(:id =#{article.id})'
       %td(align='center')= link_to image_tag('delete.png', style:'border:none; float:none;'), "#", :onclick=>"if (confirm('กรุณายืนยัน')) {location.hash='/articles/rm/#{article.id}';}"
