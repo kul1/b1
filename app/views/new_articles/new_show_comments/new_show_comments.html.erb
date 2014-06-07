@@ -2,7 +2,7 @@
 
 <% @articles=Article.all %>
 <% @article = Article.find($xvars["p"]["id"]) %> 
-
+<%= debug $xvars['p'] %>
 
 
 
@@ -25,9 +25,13 @@
     <p><%= comment.content %></p>
   <% end %>
 <% end %>
-
+<% 
+comment =Comment.new 
+%>
 <h2>New Comment</h2>
-<%= form_for [@article, Comment.new] do |f| %>
+<%= fields_for comment do |f| %>
   <p><%= f.label :name %> <%= f.text_field :name %></p>
-  <p><%= f.text_area :content, :rows => 10 %></p>
-<% end %>>
+  <p><%= f.label :content %><%= f.text_area :content, :rows => 10 %></p>
+  dfsdfsdfsdfs     
+<%= debug $xvars['p'] %>
+<% end %>

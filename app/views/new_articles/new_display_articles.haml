@@ -10,5 +10,5 @@
   -@articles.each do |article|
     %tr
       %td= link_to article.name, :controller =>'mindapp', :action =>'init' ,:s=>'new_articles:new_show_comments' , :id => article.id 
-      %td= link_to article.content, :controller =>'mindapp', :action =>'init' ,:s=>'new_articles:new_show_comments' , :id => article.id 
+      %td= link_to article.content, :controller =>'new_articles', :action =>'new_show_comments', :id => article.id 
       %td(align='center')= link_to image_tag('delete.png', style:'border:none; float:none;'), "#", :onclick=>"if (confirm('กรุณายืนยัน')) {location.hash='/articles/rm/#{article.id}';}"

@@ -10,10 +10,14 @@ class NewArticlesController < ApplicationController
     	@articles = Article.all
   end
 
+  def shows
+      @articles = Article.all
+  end
+
   def new_create_comment
     @articles = Article.all 
     @article.id = $xvars["p"]["id"]
     @article = Article.find_by :id=> $xvars["new_display_articles"]["id"]
-    @comment = @article.comments :cm_id => $xvars["display_articles"]["id"]
+    @comment = @article.comments.create!(params[:comment=>$xvars["new_show_comments"]["comment"]])
   end
 end

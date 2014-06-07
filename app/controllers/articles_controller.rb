@@ -4,6 +4,10 @@ class ArticlesController < ApplicationController
   end  	
   def display_articles
     	@articles = Article.all
+      debug $xvars[p]
+  end
+  def show
+      @articles = Article.all
   end
   def rm
     	@article = Article.find params[:id]

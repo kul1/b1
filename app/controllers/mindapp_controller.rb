@@ -1,6 +1,7 @@
 # -*- encoding : utf-8 -*-
 class MindappController < ApplicationController
   def index
+    @articles = Article.all.desc(:created_at).limit(10)
   end
   def logs
     @xmains = Mindapp::Xmain.all.desc(:created_at).page(params[:page]).per(10)

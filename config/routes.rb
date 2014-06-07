@@ -23,7 +23,7 @@ B1::Application.routes.draw do
   resources :comments
   resources :new_articles
 
-  resources :articles do
+  resources :new_articles do
     resources :comments
   end
 
