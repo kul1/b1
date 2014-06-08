@@ -1,4 +1,5 @@
 %div(style="text-align:center")
-%div(style="text-align:center")
   = image_tag "house.png"
-  %h2 ปัญหา 1. เมื่อ Click link มัน ไปเอา id มาเป็น action show แล้ว บอกว่า action show หาไม่เจอ ผมลองเข้าไปดูใน bt9 แล้ว กลับใช้ได้ เช็คใน rake routes ก็ดูเหมือน น่าจะรู้ว่าตัวที่ link แรก น่าจะเป็น id แต่ทำไม พอเข้าไปทำงาน ดัน ไม่รู้ว่า action น่าจะเป็น ตัวที่ ส่งไปให้ คือ show
+%div(style="text-align:left")
+  %h3 Problem 1. เมื่อ Click link มัน ไปเอา id มาเป็น action show แล้ว บอกว่า action show หาไม่เจอ ผมลองเข้าไปดูใน bt9 แล้ว กลับใช้ได้ เช็คใน rake routes ก็ดูเหมือน น่าจะรู้ว่าตัวที่ link แรก น่าจะเป็น id แต่ทำไม พอเข้าไปทำงาน ดัน ไม่รู้ว่า action น่าจะเป็น ตัวที่ ส่งไปให้ คือ show
+  %h3 Solution 1. fixed ที่ routes เอา resources :article ออก 
