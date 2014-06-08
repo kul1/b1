@@ -2,18 +2,9 @@
  <% @comments = @article.comments %>
  <%= @article.id %>
  <%= @article.name %>
+<p> 
  <%= @article.content %>
-<h1>Listing comments</h1>
-
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Content</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
+</p>
 
 <% if @article.comments.size > 0 %>
   <h2>Comments</h2>
@@ -23,7 +14,7 @@
   <% end %>
 <% end %>
 
-<%= comment = Comment.new %>
+<%-comment = Comment.new %>
 <h2>New Comment</h2>
 <%= fields_for comment do |f| %>
   <p><%= f.label :name %> <%= f.text_field :name %></p>

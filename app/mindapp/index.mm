@@ -98,11 +98,11 @@
 <node CREATED="1402235108993" ID="ID_1277234043" MODIFIED="1402235296328" TEXT="show_comments_create">
 <icon BUILTIN="attach"/>
 </node>
-<node CREATED="1402237763463" ID="ID_763475990" MODIFIED="1402237816960" TEXT="show_debugger">
-<icon BUILTIN="attach"/>
-</node>
 <node CREATED="1402235301081" ID="ID_456741029" MODIFIED="1402235329677" TEXT="new_comment">
 <icon BUILTIN="bookmark"/>
+</node>
+<node CREATED="1402237763463" ID="ID_763475990" MODIFIED="1402237816960" TEXT="show_debugger">
+<icon BUILTIN="attach"/>
 </node>
 </node>
 </node>
