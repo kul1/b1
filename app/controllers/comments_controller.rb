@@ -8,7 +8,7 @@ class CommentsController < ApplicationController
     debugger
     @article = Article.find(params[:article_id])
     @comment = @article.comments.create!(params[:comment])
-    redirect_to @article, :notice => "Comment created!"
+    #redirect_to @article, :notice => "Comment created!"
   end
 
   def show

@@ -1,0 +1,12 @@
+- @title= "Articles"
+- @article = Article.find($xvars["p"]["id"])  
+= debug $xvars['p']
+= @article.name 
+= @article.content
+- if @article.comments.size > 0
+	%h2 Comments
+	- for comment in @article.comments 
+		= comment.name
+		= comment.content
+%h2 New Comment
+= debug $xvars['p'] 

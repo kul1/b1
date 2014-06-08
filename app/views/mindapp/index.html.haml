@@ -2,7 +2,7 @@
 - @articles.each do |article|
   .person(style="width:30%; vertical-align:top")
     %h3(style="margin-bottom:0;")
-      = link_to article.name, :controller=>"articles", :action=>"show", :id=>article.id
+      = link_to article.name, :controller=>"articles", :action=>"show_comments", :id=>article.id
       - if article.content
         = link_to_blank image_tag("page.png"), article.content
     .date= date_thai(article.created_at, :time=>true)

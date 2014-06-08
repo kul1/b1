@@ -7,9 +7,9 @@
 	=for comment in @article.comments
 		=comment.name
 		=comment.content
-
+- comment = @comments.create
 Enter New Comment
-= fields_for comment.new do |f| 
+= fields_for comment do |f| 
 	= f.label :name 
 	= f.text_field :name 
 	= f.label :content 
