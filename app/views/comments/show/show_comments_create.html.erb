@@ -1,0 +1,33 @@
+ <% @article = Article.find($xvars["p"]["id"]) %>
+ <% @comments = @article.comments %>
+ <%= @article.id %>
+ <%= @article.name %>
+ <%= @article.content %>
+<h1>Listing comments</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Content</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+
+<% if @article.comments.size > 0 %>
+  <h2>Comments</h2>
+  <% for comment in @article.comments %>
+    <h3><%= comment.name %></h3>
+    <p><%= comment.content %></p>
+  <% end %>
+<% end %>
+
+<%= comment = Comment.new %>
+<h2>New Comment</h2>
+<%= fields_for comment do |f| %>
+  <p><%= f.label :name %> <%= f.text_field :name %></p>
+  <p><%= f.text_area :content, :rows => 10 %></p>
+<% end %>
+
+

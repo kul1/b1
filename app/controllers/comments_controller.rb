@@ -11,8 +11,17 @@ class CommentsController < ApplicationController
     #redirect_to @article, :notice => "Comment created!"
   end
 
+  def new_comment
+    @article = Article.find($xvars["p"]["id"])
+    @comment = @article.comments.create!($xvars["show_comments_create"]["comment"])
+  end
+
+  def debugger
+    debugger $xvars
+  end
   def show
   	@article = Article.find(params[:id])
+    @comments = @article.comments 
   end
 
   def show_comments
