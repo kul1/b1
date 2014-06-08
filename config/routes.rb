@@ -17,9 +17,7 @@ B1::Application.routes.draw do
   resources :identities
 
   root :to => 'mindapp#index'
-    resources :articles do
-    resources :comments
-  end
+  
   resources :comments
   resources :new_articles
 

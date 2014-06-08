@@ -7,7 +7,7 @@ class ArticlesController < ApplicationController
       debug $xvars[p]
   end
   def show
-      @articles = Article.all
+      @article = Article.all
   end
   def rm
     	@article = Article.find params[:id]
