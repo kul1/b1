@@ -75,25 +75,9 @@
 </node>
 </node>
 <node CREATED="1401192623527" ID="ID_1219457086" MODIFIED="1401193282354" TEXT="new_articles: Articles (New Solutions)">
-<node CREATED="1401193117948" ID="ID_1235445171" MODIFIED="1401369495384" TEXT="link: New Display Articles:/new_display_articles"/>
-<node CREATED="1401192214744" ID="ID_1357090415" MODIFIED="1401192370844" TEXT="new_show_articles: New Show Articles">
-<node CREATED="1401192386691" ID="ID_1638750765" MODIFIED="1401192546964" TEXT="new_show_comments">
-<icon BUILTIN="attach"/>
+<node CREATED="1401193117948" ID="ID_1235445171" MODIFIED="1402278433711" TEXT="link: New Display Articles (worked):/new_display_articles"/>
 </node>
-<node CREATED="1401192408217" ID="ID_132630758" MODIFIED="1401192567743" TEXT="new_create_comment">
-<icon BUILTIN="bookmark"/>
-</node>
-</node>
-<node CREATED="1401192214744" ID="ID_1875003335" MODIFIED="1401273644264" TEXT="new_show_comments: New Show Comments">
-<node CREATED="1401192386691" ID="ID_916374381" MODIFIED="1401192546964" TEXT="new_show_comments">
-<icon BUILTIN="attach"/>
-</node>
-<node CREATED="1401192408217" ID="ID_1039978877" MODIFIED="1401192567743" TEXT="new_create_comment">
-<icon BUILTIN="bookmark"/>
-</node>
-</node>
-</node>
-<node CREATED="1402234751340" ID="ID_1796009671" MODIFIED="1402234769741" TEXT="comments: Comments">
+<node CREATED="1402234751340" ID="ID_1796009671" MODIFIED="1402279388278" TEXT="comments: Comments called by NDA">
 <node CREATED="1402234769743" ID="ID_147836556" MODIFIED="1402234866655" TEXT="show: Show">
 <node CREATED="1402235108993" ID="ID_1277234043" MODIFIED="1402235296328" TEXT="show_comments_create">
 <icon BUILTIN="attach"/>

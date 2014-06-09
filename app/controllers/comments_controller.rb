@@ -23,9 +23,10 @@ class CommentsController < ApplicationController
   	@article = Article.find(params[:id])
     @comments = @article.comments 
   end
-
   def show_comments
     @article = Article.find(params[:id])
+    @article = Article.last
+    
     @comments = @article.comments 
   end
 
