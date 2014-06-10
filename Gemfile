@@ -43,6 +43,8 @@ gem 'jquery-rails'
 #gem "mongo" '1.10.1'
 gem "bson_ext", '1.5.1'
 gem "mongoid"
+# gem 'geocoder' must after mongoid /Tim
+gem 'geocoder'
 gem "nokogiri"
 gem "haml-rails"
 gem "mail"

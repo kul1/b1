@@ -72,6 +72,7 @@ GEM
     erubis (2.7.0)
     eventmachine (1.0.3)
     execjs (2.0.2)
+    geocoder (1.2.0)
     haml (4.0.5)
       tilt
     haml-rails (0.4)
@@ -199,6 +200,7 @@ DEPENDENCIES
   cloudinary
   coffee-rails (~> 3.2.1)
   debugger
+  geocoder
   haml-rails
   jquery-rails
   kaminari
