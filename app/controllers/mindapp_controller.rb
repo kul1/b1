@@ -11,7 +11,7 @@ class MindappController < ApplicationController
   end
   def pending
     @title= "Pending Tasks"
-    @xmains = Mindapp::Xmain.in(status:['R','I']).asc(:created_at)
+    @xmains = Mindapp::Xmain.in(status:['R','I']).desc(:created_at)
   end
   def cancel
     Mindapp::Xmain.find(params[:id]).update_attributes :status=>'X'

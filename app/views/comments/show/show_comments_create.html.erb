@@ -1,11 +1,11 @@
  <% @article = Article.find($xvars["p"]["id"]) %>
  <% @comments = @article.comments %>
- <%= @article.id %>
- <%= @article.name %>
+ <%#= @article.id %>
+ <h2><%= @article.name %></h2>
 <p> 
  <%= @article.content %>
 </p>
-
+-------------------------------------
 <% if @article.comments.size > 0 %>
   <h2>Comments</h2>
   <% for comment in @article.comments %>
@@ -17,8 +17,7 @@
 <%-comment = Comment.new %>
 <h2>New Comment</h2>
 <%= fields_for comment do |f| %>
-  <p><%= f.label :name %> <%= f.text_field :name %></p>
-  <p><%= f.text_area :content, :rows => 10 %></p>
+  <p><%= f.label :Name    %> <%= f.text_field :name %></p>
+  <p><%= f.label :Content %> <%= f.text_area :content, :rows => 10 %></p>
 <% end %>
-
 
