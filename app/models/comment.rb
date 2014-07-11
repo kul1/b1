@@ -6,5 +6,6 @@ class Comment
   field :name, :type => String
   field :content, :type => String
   embedded_in :article, :inverse_of => :comments
+  field :price, :type => Float
   # mindapp end
 end
